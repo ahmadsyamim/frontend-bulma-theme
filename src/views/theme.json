@@ -1,0 +1,6 @@
+{
+    "name": "Bulma",
+    "extends": "",
+    "asset-path": "Bulma",
+    "views-path": "Bulma"
+}
