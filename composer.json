@@ -19,6 +19,6 @@
     "require": {
     },
     "scripts": {
-        "dist": "tar -cvzf ./dist/Bulma.theme.tar.gz ./src"
+        "dist": "tar -cvzf ./dist/Bulma.theme.tar.gz -C ./src ."
     }
 }
