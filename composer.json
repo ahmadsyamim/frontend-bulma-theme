@@ -19,7 +19,6 @@
     "require": {
     },
     "scripts": {
-        "post-autoload-dump": [
-        ]
+        "dist": "tar -cvzf ./dist/Bulma.theme.tar.gz ./src"
     }
 }
