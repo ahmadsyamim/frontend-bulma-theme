@@ -1,5 +1,6 @@
 {
     "name": "ahmadsyamim/frontend-bulma-theme",
+    "title": "Bulma",
     "description": "",
     "type": "laravel-module-theme",
     "authors": [
