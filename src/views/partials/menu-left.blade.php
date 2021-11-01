@@ -1,11 +1,16 @@
 @foreach($items as $menu_item)
-    @php ($hasChildren = count($menu_item->children) > 0)
-    <li>
-        <a href="{{ url($menu_item->link()) }}">{{ $menu_item->title }}</a>
+    @php ($hasChildren = count($menu_item->children) > 0)    
         @if ($hasChildren)
-            <ul class="menu">
-                @include('Bulma.partials.menu-left', ['items' => $menu_item->children])
-            </ul>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    {{ $menu_item->title }}
+                </a>
+
+                <div class="navbar-dropdown">
+                    @include('Bulma.partials.menu-left', ['items' => $menu_item->children])
+                </div>
+            </div>
+        @else
+        <a class="navbar-item" href="{{ url($menu_item->link()) }}">{{ $menu_item->title }}</a>
         @endif
-    </li>
 @endforeach
