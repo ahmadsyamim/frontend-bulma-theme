@@ -53,5 +53,20 @@
         </script>
     @endif
 
+    <style>
+        .body {
+            position: relative;
+            min-height: 100vh;
+            padding-bottom: 30px;
+        }
+
+        .footer {
+            bottom: 0px;
+            position: absolute;
+            left: 0px;
+            width: 100%;
+        }
+    </style>
+
 </head>
-<body>
+<body class="body">
