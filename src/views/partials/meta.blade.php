@@ -24,10 +24,7 @@
     <link rel="apple-touch-icon-precomposed" href="{{ url('/') }}/images/apple-touch-icon.png" />
 
     <!-- Styles -->
-    @php 
-     Asset::add('bulma','bulma/css/bulma.min.css');
-    @endphp
-    {!! Asset::styles() !!}
+    {{ HTML::style('bulma/css/bulma.min.css') }}
 
     @if (setting('site.google_analytics_tracking_id'))
     <!-- Google Analytics (gtag.js) -->
